@@ -1,5 +1,7 @@
 class Coffee:
     def __init__(self, size, price):
+        # Establish a safe internal fallback value first
+        self._size = "Medium"
         self.size = size
         self.price = price
 
